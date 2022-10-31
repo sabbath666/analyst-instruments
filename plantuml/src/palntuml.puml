@@ -1,0 +1,20 @@
+``` plantuml
+@startuml
+'!theme blueprint
+'!theme materia-outline
+
+object London
+object Washington
+object Berlin
+object NewYork
+
+map CapitalCity {
+ UK *-> London
+ USA *--> Washington
+ Germany *---> Berlin
+ Germany *---> Berlin
+}
+
+NewYork --> CapitalCity::USA
+@enduml
+```
