@@ -25,6 +25,8 @@ services:
       DB_PASS: wikijsrocks
       DB_NAME: wiki
     restart: unless-stopped
+    volumes:
+      - /etc/wiki/github.pem:/etc/wiki/github.pem
     ports:
       - "80:3000"
 
